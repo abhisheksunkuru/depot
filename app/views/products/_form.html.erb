@@ -1,0 +1,31 @@
+<center>
+<table border=0>
+<%= form_for (@product) do |f|%>
+
+  <tr>
+  <td><%= f.label 'Title', :title %></td>
+  <td><%= f.text_field :title %></td>
+  </tr>
+
+  <tr>
+  <td><%= f.label 'description',:description %></td>
+  <td><%= f.text_area :description %></td>
+  </tr>
+
+  <tr>
+  <td><%= f.label 'ImageUrl', :image_url %></td>
+  <td><%= f.text_field :image_url %></td>
+  </tr>
+
+  <tr>
+  <td><%= f.label 'Price', :price %></td>
+  <td><%= f.text_field :price %></td>
+  </tr>
+
+ <tr>
+ <td><%= f.submit %></td>
+ </tr>
+
+<% end %>
+</table>
+<center>
